@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-widthinitial-scale=1.0">
+<title>Programação web com PHP</title>
+<link rel="stylesheet" href="../CSS/formata-pagina.css">
+</head>
+<body>
+	<h1>Fundamentos do PHP</h1>
+
+	<form action="../PHP/Exerc9.php" method="post">
+        <fieldset>
+            <legend> Supermercados AAA - Processamento de vendas </legend>
+            
+            <label>Informe valor da compra </label>
+            <input type="number" name="valor_compra" step="0.01" min="0" autofocus><br>
+
+			<label> Indique a forma de pagamento </label><br>
+            <input type="radio" name="forma_pagamento" value="0">
+            <label> A vista </label><br>
+
+            <input type="radio" name="forma_pagamento" value="1">
+            <label> A prazo </label><br><br>
+
+            <input type="checkbox" name="pagamento_visa">
+            <label> Pagamento no cartão Visa </label>
+            
+            <button> Processar conta </button>
+
+        </fieldset>
+    </form>
+</body>
+</html>

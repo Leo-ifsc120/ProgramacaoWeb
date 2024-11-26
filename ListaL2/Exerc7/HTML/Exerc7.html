@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-widthinitial-scale=1.0">
+<title>Programação web com PHP</title>
+<link rel="stylesheet" href="../CSS/formata-pagina.css">
+</head>
+<body>
+	<h1>Fundamentos do PHP</h1>
+
+	<form action="../PHP/Exerc7.php" method="post">
+        <fieldset>
+            <legend> Supermercados AAA - Processamento de vendas </legend>
+            
+            <label>Informe valor da compra </label>
+            <input type="number" name="valor_compra" step="0.01" min="0" autofocus><br>
+
+			<label> O cliente pagou com cartão</label><br>
+			<input name="forma_pagamento"  type="radio" value="sim">
+			<label>Sim</label><br>
+			<input name="forma_pagamento" type="radio" value="nao">
+			<label>Não</label><br>
+	
+			<label> O cliente requisitou a entrega a domicílio</label><br>
+			<input name="forma_entrega"  type="radio" value="sim">
+			<label>Sim</label><br>
+			<input name="forma_entrega" type="radio" value="nao">
+			<label>Não</label>
+            
+            <button id="Button" type="submit">Conversão</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>

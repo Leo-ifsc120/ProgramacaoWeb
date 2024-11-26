@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+body
+{
+    background-color: #2B4570;
+    ;
+}
+p
+{
+    color: #A8D0DB;
+    font-family: "Pixelify Sans", sans-serif;
+    margin-left: 28%;
+}
+h1
+{
+    color: #A8D0DB;
+    font-family: "Rye", serif;
+    border: 3px solid #6A8BA6;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #4B688B;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Começando com JavaScript </title>
+ <link rel="stylesheet" href="../CSS/formata-pagina.css">
+</head>
+
+<body>
+ <h1> Fundamentos php </h1>
+
+
+    <form action="../PHP/Exerc4.php" method="post">
+        <fieldset>
+            <legend> Conversor de Temperaturas </legend>
+
+            <input id="typeCelsios" name="type"  type="radio" value="C" checked>
+            <label>Celsius ºC</label>
+            <input id="typeFahrenheit" name="type" type="radio" value="F" >
+            <label>Fahrenheit ºF</label>
+
+
+            <br>
+            <label>Informe a temperatura: </label>
+                <input name="temp" id="temp" type="number" step="0.1">
+            
+            <button id="Button" type="submit">Conversão</button>
+
+        </fieldset>
+    </form>
+
+     
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widthinitial-scale=1.0">
+    <title>Programação web com PHP</title>
+    <link rel="stylesheet" href="../CSS/formata-pagina.css">
+</head>
+<body>
+<h1>Fundamentos do PHP</h1>
+
+<form action="../PHP/Exerc10.php" method="post">
+    <fieldset>
+        <legend> Supermercados AAA - Processamento de vendas </legend>
+
+        <label>Informe valor da compra </label>
+        <input type="number" name="valor_compra" step="0.01" min="0" autofocus><br>
+
+        <labe> indique a faixa etária do cliente </labe><br>
+        <input type="radio" name="faixa_etaria" value="0">
+        <label> Menor que 55 anos </label><br>
+        <input type="radio" name="faixa_etaria" value="1">
+        <label> Entre 55 a 70 </label><br>
+        <input type="radio" name="faixa_etaria" value="2">
+        <label> maior que 70 anos </label><br>
+
+
+        <label> Indique a forma de pagamento </label><br>
+        <input type="checkbox" name="fidelidade">
+        <label> Cartão fidelidade </label><br>
+        <input type="radio" name="forma_pagamento" value="0">
+        <label> A vista </label><br>
+        <input type="radio" name="forma_pagamento" value="1">
+        <label> A prazo </label>
+
+
+
+        <button> Processar conta </button>
+
+    </fieldset>
+</form>
+</body>
+</html>
