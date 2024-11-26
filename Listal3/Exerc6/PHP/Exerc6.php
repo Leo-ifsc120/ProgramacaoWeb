@@ -44,6 +44,9 @@
     }
     echo "</table>";
 
+    $menorIdade = min($vetoridades);
+    $menornome = array_search($menorIdade, $vetoridades);
+
 
 
     ?>
