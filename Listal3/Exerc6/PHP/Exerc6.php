@@ -11,7 +11,7 @@
 
 <form action="../HTML/Exerc6.html">
 
-    <div>
+
     <p>
     <?php
 
@@ -23,7 +23,7 @@
     $idade2 = $_POST['idade2'];
     $idade3 = $_POST['idade3'];
 
-    $vetoridades = [$nome1 => $idade1,
+    $vetorpessoas = [$nome1 => $idade1,
                     $nome2 => $idade2,
                     $nome3 => $idade3];
 
@@ -33,25 +33,26 @@
                    <th> Idade </th>
                    </tr>";
 
-    foreach($vetoridades as $nome => $idade)
+    foreach($vetorpessoas as $nome => $idade)
     {
 
         echo "<tr>
-              <td>$nome</td>
-              <td>$idade</td>
+              <td><span>$nome</span></td>
+              <td><span>$idade</span></td>
               </tr>";
 
     }
     echo "</table>";
 
-    $menorIdade = min($vetoridades);
-    $menornome = array_search($menorIdade, $vetoridades);
+    $menorIdade = min($vetorpessoas);
+    $menornome = array_search($menorIdade, $vetorpessoas);
+
+    echo "<div><p>A mais nova das pessoas é <span>$menornome</span> com a idade de <span>$menorIdade</span></p></div>"
 
 
 
     ?>
     </p>
-    </div>
 
         <button type="submit">Adicionar outras idades</button>
 </form>

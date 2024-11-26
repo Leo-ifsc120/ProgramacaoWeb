@@ -113,3 +113,8 @@ caption{
   border-right: 2px solid #e2c799;
 }
 
+span{
+  font-family: "Pixelify Sans";
+  color: #6d1a1a;
+  width: 40px;
+}

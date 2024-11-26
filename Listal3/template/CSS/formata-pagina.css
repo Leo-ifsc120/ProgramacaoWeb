@@ -69,3 +69,9 @@ label.alinha {
   text-align: right;
   margin-bottom: 10px;
 }
+
+span{
+  font-family: "Pixelify Sans";
+  color: #6d1a1a;
+  width: 40px;
+}
