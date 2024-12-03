@@ -14,7 +14,7 @@
         <?php
 
             $vetorPrecos = ["dipirona" => 10.00,
-                            "parecetamol" => 15.12,
+                            "paracetamol" => 15.12,
                             "rivotril" => 80.15];
 
             $valorTotalCompra = 0;
@@ -26,11 +26,11 @@
 
                 foreach($vetorRemediosComprados as $remedio)
                 {
-                    $valorTotalCompra = $valorTotalCompra + $vetorPrecos[$produto];
+                    $valorTotalCompra = $valorTotalCompra + $vetorPrecos[$remedio];
                 }
                 $valorTotalCompraFormatado = number_format($valorTotalCompra, 2, ",", ".");
 
-                echo "<div><p>O valor total da compra efetuada é de <span>R$$valorTotalCompra</span></p></div>";
+
 
                 echo "<div><p>Produtos selecinados<br>";
                 foreach($vetorRemediosComprados as $remedio)
@@ -38,6 +38,25 @@
                     echo "<span> $remedio </span><br>";
                 }
                 echo "</div></p>";
+            }
+            else
+            {
+                    echo "<div><p>O valor total da compra efetuada é de <span>R$$valorTotalCompra</span></p></div>";
+            }
+
+            if(isset($_POST["idade"]))
+            {
+                $idade = $_POST["idade"];
+                if($idade >= 60)
+                {
+
+                    $desconto = $valorTotalCompra * 5 / 100;
+                    $valorFinal = $valorTotalCompra - $desconto;
+                    $valorFinalFormatado = number_format($valorFinal, 2, ",", ".");
+
+                    echo "<div><p>Desconto de 5% para idosos.<br> O valor total da compra efetuada é de <span>R$$valorFinalFormatado</span></p></div>";
+
+                }
             }
             else
             {
