@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programação web em PHP - Uso de vetores</title>
+    <link rel="stylesheet" href="../CSS/formata-pagina.css">
+</head>
+<body>
+
+    <h1> Uso de vetores no PHP </h1>
+
+    <form method="post" action="../PHP/Exerc8.php">
+        <fieldset>
+            <legend>Lojas online AAA - Hardware em geral - carrinho de compras</legend>
+
+            <label> Caro usuario, selecione, abaixo os produtos para compra </label><br>
+
+            <label>
+                <input type="checkbox" name="produto[]" value="dipirona">
+                Dipirona
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="produto[]" value="paracetamol">
+                Paracetamol
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="produto[]" value="rivotril">
+                Rivotril
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="idade" value="mais60">
+                Marque esta opção se o cliente tiver 60 anos ou mais
+            </label><br>
+
+            <button type="submit"> Comprar procutos</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
