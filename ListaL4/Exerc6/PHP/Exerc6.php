@@ -22,7 +22,7 @@ $preco1  = $_POST["preco1"];
 $preco2  = $_POST["preco2"];
 $preco3  = $_POST["preco3"];
 
-$codepesq = $_POST["codepesq"];
+$codepesq = $_POST["codePesq"];
 
 $matrizRemedios = [$code1 => [$medic1, $preco1],
                     $code2 => [$medic2, $preco2],
