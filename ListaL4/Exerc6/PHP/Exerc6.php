@@ -29,7 +29,7 @@ $matrizRemedios = [$code1 => [$medic1, $preco1],
                     $code3 => [$medic3, $preco3]];
 
 echo "<table>
-         <caption> Relação de dados acadêmicos dos alunos do CTDS/PRWI - ordenação pela média, decrescentemente </caption>
+         <caption> Tabela de remedios </caption>
          <tr>
           <th> Código do medicamento </th>
           <th> Nome do medicamento </th> 
@@ -55,7 +55,47 @@ $precoMaisBarato = min($vetorAux);
 $codeMedicMaisBarato = array_search($precoMaisBarato, $vetorAux);
 $nomeMedicMaisBarato = $matrizRemedios[$codeMedicMaisBarato][0];
 
-echo "<div> <p>Medicamento mais barato: <span>$nomeMedicMaisBarato</span></p> </div>"
+echo "<div> <p>Medicamento mais barato: <span>$nomeMedicMaisBarato</span></p> </div>";
+
+$codeEncontrado = array_key_exists($codepesq, $matrizRemedios);
+if (!$codeEncontrado)
+{
+    echo "<div> <p>Caro usuario, o medicameto de código <span>$codepesq</span> não foi encontrado</p> </div>";
+}
+else
+{
+    $nomeMedic = $matrizRemedios[$codepesq][0];
+    $precoMedic = $matrizRemedios[$codepesq][1];
+    echo "<div> <p>Dados do medicamento pesquisado: <br> Código: <span>$codepesq</span> <br> Nome: <span>$nomeMedic</span> <br> Preço: <span>$precoMedic</span</p> </div>";
+}
+
+foreach($matrizRemedios as $code => $vetorInterno)
+    {
+
+        $vetorAux[$code] = $vetorInterno[0];
+
+    }
+
+asort($vetorAux);
+
+echo "<table>
+         <caption> Relação de dados dos medicamentos cadastrados na matriz, ordenados crescentemente, em ordem alfabética </caption>
+         <tr>
+          <th> Código do medicamento </th>
+          <th> Nome do medicamento </th> 
+          <th> preço do medicamento </th>
+         </tr>";
+
+foreach($vetorAux as $code => $medicamento)
+{
+    $preco = $matrizRemedios[$code][1];
+    echo "<tr>
+          <td> $code </td>
+          <td> $medicamento </td>
+          <td> $preco </td>
+         </tr>";
+}
+echo "</table>";
 
 ?>
 </body>
