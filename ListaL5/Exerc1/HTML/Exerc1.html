@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title> sistema de lavação de carros </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Programação web com PHP - uso de matrizes </title>
     <link rel="stylesheet" href="../CSS/formata-pagina.css">
 </head>
-    <body>
+
+<body>
+<h1> Matrizes na linguagem PHP - listaL5 - exercício 1 avaliativo </h1>
+<form method="post" action="../PHP/Exerc1.php">
+    <fieldset>
+        <legend> Sistema de lavação de carros </legend>
 
 
+        <div>
+        <label class="alinha"> Forneça o número do Chassi do primeiro Veículo: </label>
+        <input type="text" name="chassi1" autofocus> <br>
 
-    </body>
+        <label class="alinha"> Forneça o nome do fabricante do primeiro Veículo: </label>
+        <input type="text" name="fabricante1"> <br>
+
+        <label class="alinha"> Forneça o preço de venda do primeiro veiculo: </label>
+        <input type="number" name="preco1" step="0.01"> <br>
+        </div>
+
+        <div>
+        <label class="alinha"> Forneça o número do Chassi do segundo Veículo: </label>
+        <input type="text" name="chassi2"> <br>
+
+        <label class="alinha"> Forneça o nome do fabricante do segundo Veículo: </label>
+        <input type="text" name="fabricante2"> <br>
+
+        <label class="alinha"> Forneça o preço de venda do segundo veiculo: </label>
+        <input type="number" name="preco2" step="0.01"> <br>
+        </div>
+
+        <div>
+        <label class="alinha"> Forneça o número do Chassi do terceiro Veículo: </label>
+        <input type="text" name="chassi3"> <br>
+
+        <label class="alinha"> Forneça o nome do fabricante do terceiro Veículo: </label>
+        <input type="text" name="fabricante3"> <br>
+
+        <label class="alinha"> Forneça o preço de venda do terceiro veiculo: </label>
+        <input type="number" name="preco3" step="0.01"> <br>
+        </div>
+
+        <div>
+        <label class="alinha"> Forneça o número do Chassi do quarto Veículo: </label>
+        <input type="text" name="chassi4"> <br>
+
+        <label class="alinha"> Forneça o nome do fabricante do quarto Veículo: </label>
+        <input type="text" name="fabricante4"> <br>
+
+        <label class="alinha"> Forneça o preço de venda do quarto veiculo: </label>
+        <input type="number" name="preco4" step="0.01"> <br>
+        </div>
+
+    </fieldset>
+
+    <button> Criar e ordenar a matriz </button>
+</form>
+</body>
 </html>

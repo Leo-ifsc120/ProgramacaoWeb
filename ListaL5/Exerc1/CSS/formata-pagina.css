@@ -24,7 +24,7 @@ p
 fieldset {
   color: #f2ecbe;
   border: 4px solid #e2c799;
-  width: 350px;
+  width: 500px;
   background-color: #9a3b3b;
   margin: auto;
   border-radius: 10px;
@@ -36,19 +36,20 @@ button {
   margin: auto;
   display: block;
   font-family: "Pixelify Sans";
+  font-style: italic;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
-  color: #f2ecbe;
+  color: #dcc677;
   background-color: #c08261;
 }
 
 div {
   border: 2px solid #e2c799;
   text-align: center;
-  width: 300px;
+  width: 500px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   border-radius: 5px;
   background-color: #c08261;
 }
@@ -59,19 +60,50 @@ input {
   color: #f2ecbe;
   border: 2px solid #e2c799;
   border-radius: 5px;
-  width: 40px;
+  width: 90px;
 }
 
 label.alinha {
   display: inline-block;
   color: #f2ecbe;
-  width: 200px;
+  width: 390px;
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 span{
   font-family: "Pixelify Sans";
   color: #6d1a1a;
   width: 40px;
+}
+
+table {
+  width: 75%;
+  height: 300px;
+  margin: auto;
+  margin-top: 10px;
+  border: 2px solid #e2c799;
+  background-color: #c08261;
+}
+td,th{
+  font-family: "Pixelify Sans", sans-serif;
+  border: 2px solid #e2c799;
+  color: #f2ecbe;
+}
+th{
+  background-color: #9a3b3b;
+  font-weight: bold;
+}
+td{
+  text-align: center;
+}
+caption{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 20px;
+  color: #f2ecbe;
+  background-color: #9a3b3b;
+  border-top: 2px solid #e2c799;
+  border-left: 2px solid #e2c799;
+  border-right: 2px solid #e2c799;
 }
